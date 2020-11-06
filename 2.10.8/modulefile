@@ -1,0 +1,45 @@
+#%Module1.0
+#INSTALLATION instructions can be found here https://gitlab.psc.edu/icaoberg/singularity-sra-toolkit
+
+## "URL: https://www.psc.edu/resources/software"
+## "Category: Bioinformatics"
+
+ proc ModulesHelp { } {
+ global dotversion
+ puts stderr "sra-toolkit 2.10.8 (sra-toolkit)"
+ puts stderr "---------------------"
+ puts stderr "\nTo enable, first load the following required modules (via module load command): "
+ puts stderr "\n\tmodule load sra-toolkit/2.10.8"
+ puts stderr "\nFor a full list of binaries included in this module, type"
+ puts stderr "\n\tmodule what-is sra-toolkit/2.10.8"
+ }
+
+module-whatis "sra-toolkit 2.10.8 (sra-toolkit)
+  The SRA Toolkit and SDK from NCBI is a collection of tools and libraries for using data in the INSDC Sequence Read Archives.
+
+  Source code can be found here
+  * https://github.com/ncbi/sra-tools
+
+  Documentation can be found here
+  * https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc 
+
+  Tools included in this module are
+
+  * fastq-dump
+  * prefetch
+  * sam-dump
+  * sra-pileup
+  * vdb-config
+  * vdb-decrypt
+  * abi-dump
+  * illumina-dump
+  * sff-dump
+  * sra-stat
+  * vdb-dump
+  * vdb-encrypt
+  * vdb-validate
+  *sra-toolkit"
+
+set SRATOOLKIT_HOME /opt/packages/sra-toolkit/2.10.8
+setenv SRATOOLKIT_HOME ${SRATOOLKIT_HOME}
+prepend-path PATH ${SRATOOLKIT_HOME}

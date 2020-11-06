@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ ! $(command -v singularity) ]; then
+	module load singularity/3.6.3
+fi
+
+VERSION=2.10.8
+PACKAGE=sra-toolkit
+TOOL=vdb-config
+DIRECTORY=/opt/packages/$PACKAGE/$VERSION
+
+singularity exec -B /pylon5 $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
