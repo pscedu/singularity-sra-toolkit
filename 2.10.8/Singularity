@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: quay.io/biocontainers/sra-tools:2.10.8--pl526haddd2b5_0
+
+%labels
+    AUTHOR icaoberg
+    EMAIL icaoberg@psc.edu
+    WEBSITE http://www.andrew.cmu.edu/~icaoberg
+    VERSION 2.10.8
+
+%post
+   rm /etc/resolv.conf
+
+####################################################################################
