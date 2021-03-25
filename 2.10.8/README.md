@@ -1,6 +1,8 @@
 # README
 
 ## About
+* THIS VERSION IS BUGGY DO NOT DEPLOY *
+
 Source code repository can be found [here](https://github.com/ncbi/sra-tools).
 
 ## Building the container for Bridges (or similar)
