@@ -4,7 +4,7 @@ From: quay.io/biocontainers/sra-tools:2.10.8--pl526haddd2b5_0
 %labels
     AUTHOR icaoberg
     EMAIL icaoberg@psc.edu
-    WEBSITE http://www.andrew.cmu.edu/~icaoberg
+    WEBSITE http://gitlab.psc.edu/icaoberg/singularity-sra-toolkit
     VERSION 2.10.8
 
 %post

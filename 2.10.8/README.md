@@ -1,7 +1,7 @@
 # README
 
 ## About
-Source code repository can be found [here]().
+Source code repository can be found [here](https://github.com/ncbi/sra-tools).
 
 ## Building the container for Bridges (or similar)
 There is no need to build a container, because an image is already available from the Galaxy project, hence all you need to do is run
