@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: quay.io/biocontainers/sra-tools%3A2.10.9--pl526haddd2b5_0
+From: debian:latest
 
 %labels
     AUTHOR icaoberg
@@ -7,7 +7,14 @@ From: quay.io/biocontainers/sra-tools%3A2.10.9--pl526haddd2b5_0
     WEBSITE http://gitlab.psc.edu/icaoberg/singularity-sra-toolkit
     VERSION 2.10.9
 
+%environment
+    PATH=$PATH:/opt/sratoolkit.2.10.9-ubuntu64/bin/
+
 %post
-   rm /etc/resolv.conf
+   apt update && apt install -y wget
+   wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.10.9/sratoolkit.2.10.9-ubuntu64.tar.gz
+   tar -xvf sratoolkit.2.10.9-ubuntu64.tar.gz && \
+       rm -f sratoolkit.2.10.9-ubuntu64.tar.gz
+   mkdir -p /opt && mv -v sratoolkit.2.10.9-ubuntu64 /opt/
 
 ####################################################################################
