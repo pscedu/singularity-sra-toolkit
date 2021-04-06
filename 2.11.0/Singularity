@@ -1,0 +1,20 @@
+Bootstrap: docker
+From: debian:latest
+
+%labels
+    AUTHOR icaoberg
+    EMAIL icaoberg@psc.edu
+    WEBSITE http://gitlab.psc.edu/icaoberg/singularity-sra-toolkit
+    VERSION 2.11.0
+
+%environment
+    PATH=$PATH:/opt/sratoolkit.2.11.0-ubuntu64/bin/
+
+%post
+   apt-get update && apt install -y wget
+   wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.11.0/sratoolkit.2.11.0-ubuntu64.tar.gz
+   tar -xvf sratoolkit.2.11.0-ubuntu64.tar.gz && \
+       rm -f sratoolkit.2.11.0-ubuntu64.tar.gz
+   mkdir -p /opt && mv -v sratoolkit.2.11.0-ubuntu64 /opt/
+
+####################################################################################
