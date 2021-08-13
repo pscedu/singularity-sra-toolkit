@@ -1,8 +1,5 @@
 #!/bin/bash
 
-IMAGE=singularity-sra-toolkit-2.10.8.sif
-DEFINITION#!/bin/bash
-
 # Copyright © 2021 Pittsburgh Supercomputing Center.
 # All Rights Reserved.
 
@@ -22,6 +19,5 @@ if [ -f $IMAGE ]; then
 else
 	exit 1
 fi
-=Singularity
 
 singularity build --remote $IMAGE $DEFINITION
