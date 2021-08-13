@@ -1,18 +1,18 @@
 --
--- SRA Toolkit 2.10.9 modulefile
+-- SRA Toolkit 2.11.0 modulefile
 --
 -- "URL: https://www.psc.edu/resources/software"
 -- "Category: Biological Sciences"
 -- "Description: The SRA Toolkit and SDK from NCBI is a collection of tools and libraries for using data in the INSDC Sequence Read Archives."
 
 whatis("Name: SRA Toolkit")
-whatis("Version: 2.10.9")
+whatis("Version: 2.11.0")
 whatis("Category: Biological Sciences")
 whatis("URL: https://www.psc.edu/resources/software")
 whatis("Description: The SRA Toolkit and SDK from NCBI is a collection of tools and libraries for using data in the INSDC Sequence Read Archives.")
 
 help([[
-sra-toolkit 2.10.9
+sra-toolkit 2.11.0
 ------------------
 
 Description
@@ -21,11 +21,11 @@ The SRA Toolkit and SDK from NCBI is a collection of tools and libraries for usi
 
 To load the module type
 
-> module load sra-toolkit/2.10.9
+> module load sra-toolkit/2.11.0
 
 To unload the module type
 
-> module unload sra-toolkit/2.10.9
+> module unload sra-toolkit/2.11.0
 
 Documentation
 -------------
@@ -53,6 +53,6 @@ Tools included in this module are
 ]])
 
 local package = "sra-toolkit"
-local version = "2.10.9"
+local version = "2.11.0"
 local base    = pathJoin("/opt/packages",package,version)
 prepend_path("PATH", base)
