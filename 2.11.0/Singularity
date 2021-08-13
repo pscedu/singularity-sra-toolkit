@@ -2,9 +2,11 @@ Bootstrap: docker
 From: debian:latest
 
 %labels
-    AUTHOR icaoberg
+    MAINTAINER icaoberg
     EMAIL icaoberg@psc.edu
-    WEBSITE http://gitlab.psc.edu/icaoberg/singularity-sra-toolkit
+    SUPPORT help@psc.edu
+    REPOSITORY http://github.com/pscedu/singularity-sra-toolkit
+    COPYRIGHT Copyright © 2021 Pittsburgh Supercomputing Center. All Rights Reserved. 
     VERSION 2.11.0
 
 %environment
