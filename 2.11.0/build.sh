@@ -3,7 +3,7 @@
 # Copyright © 2021 Pittsburgh Supercomputing Center.
 # All Rights Reserved.
 
-PACKAGE=graphviz
+PACKAGE=sra-toolkit
 VERSION=2.11.0
 IMAGE=singularity-$PACKAGE-$VERSION.sif
 DEFINITION=Singularity
