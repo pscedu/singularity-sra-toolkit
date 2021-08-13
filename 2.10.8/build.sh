@@ -19,5 +19,3 @@ if [ -f $IMAGE ]; then
 else
 	exit 1
 fi
-
-singularity build --remote $IMAGE $DEFINITION
