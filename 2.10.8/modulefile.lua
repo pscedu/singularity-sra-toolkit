@@ -4,6 +4,7 @@
 -- "URL: https://www.psc.edu/resources/software"
 -- "Category: Biological Sciences"
 -- "Description: The SRA Toolkit and SDK from NCBI is a collection of tools and libraries for using data in the INSDC Sequence Read Archives."
+-- "Keywords : Singularity bioinformatics"
 
 whatis("Name: SRA Toolkit")
 whatis("Version: 2.10.8")
